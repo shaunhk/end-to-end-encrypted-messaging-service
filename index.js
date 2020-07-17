@@ -181,3 +181,7 @@ app.get('/check', (req, res, next) => {
 	RECEIVED_MESSAGES.length = 0;
 
 });
+
+server.listen(process.env.PORT || 8080, () => {
+    console.log(`Server started on port ${server.address().port} :)`);
+});
